@@ -311,8 +311,14 @@ function buildSlider(slider, slidesWidth, slidesHeight, slides, navs, margin) {
     if (navs) {
         slider.innerHTML = slider.innerHTML + `
             <div class="navs">
-                <a href="#" class="prev_slide"><</a>
-                <a href="#" class="next_slide">></a>
+                <div class="prev_slide">
+                    <div class="arrow-1-top"></div>
+                    <div class="arrow-1-bottom"></div>
+                </div>
+                <div class="next_slide">
+                    <div class="arrow-2-top"></div>
+                    <div class="arrow-2-bottom"></div>
+                </div>
             </div>`
     };
 };
