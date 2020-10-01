@@ -43,4 +43,9 @@ function checkPrice() {
   }
 }
 
-
+$(".name").each(function () {
+  let str = this.innerText;
+  console.log(str.slice(0, 20));
+  let length = str.slice(0, 20);
+  $(this).find(".filter").html(`${length}...`);
+});
