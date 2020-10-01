@@ -22,11 +22,11 @@ $("input").focus(function () {
     //calculation of discounts
     if (discount === "") {
       let result = price * quantity;
-      $(`#total-${perant}`).val(result);
+      $(`#total-${perant}`).val(result.toFixed(2));
       sum();
     } else {
       let result = (price * quantity * discount) / 100;
-      $(`#total-${perant}`).val(result);
+      $(`#total-${perant}`).val(result.toFixed(2));
       sum();
     }
   });
