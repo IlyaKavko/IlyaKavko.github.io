@@ -22,27 +22,32 @@
           <a href="#" class="btn btn-light">Выбрать товар</a>
           <a href="#" class="btn btn-light"> Добавить новый товар </a>
         </div>
-        <div class="sell_check">
-          <input name="sell" type="checkbox" id="sell" />
-          <label for="sell">Показать скидку</label>
+        <div class="discount_check">
+          <input name="discount" type="checkbox" id="discount" />
+          <label for="discount">Показать скидку</label>
         </div>
       </div>
       <!-- End Top button -->
       <!-- Price -->
       <div class="nomenclature_priсe">
         <table class="table table-striped">
+          <!-- Table head -->
           <thead>
             <tr class="table-primary">
-              <th></th>
+              <th class="selection"></th>
               <th>Наименование</th>
               <th>Цена (руб.)</th>
               <th>Кол-во</th>
               <th>Ед измерения</th>
-              <th class="sell">Скидка</th>
+              <th class="discount">Скидка</th>
               <th>Итого</th>
-              <th></th>
+              <th class="reserve">Резерв</th>
+              <th class="sales_order">СЗ</th>
+              <th class="delet"></th>
             </tr>
           </thead>
+          <!-- End Table head -->
+          <!--Table body-->
           <tbody>
             <!--Product one-->
             <tr id="product-1">
@@ -81,8 +86,8 @@
                   <option value="quantity">кол.</option>
                 </select>
               </td>
-              <td data-lable="Скидка" class="sell">
-                <input dir="rtl" type="text" />
+              <td data-lable="Скидка" class="discount">
+                <input dir="rtl" id="discount-product-1" type="text" />
               </td>
               <td data-lable="Итого">
                 <input
@@ -93,6 +98,8 @@
                   value="73034.03"
                 />
               </td>
+              <td class="reserve">P</td>
+              <td class="sales_order">СЗ</td>
               <td data-lable="Удалить">
                 <i
                   class="fa fa-times"
@@ -139,8 +146,8 @@
                   <option value="quantity">кол.</option>
                 </select>
               </td>
-              <td data-lable="Скидка" class="sell">
-                <input dir="rtl" type="text" />
+              <td data-lable="Скидка" class="discount">
+                <input dir="rtl" id="discount-product-2" type="text" />
               </td>
               <td data-lable="Итого">
                 <input
@@ -151,6 +158,8 @@
                   value="73034.03"
                 />
               </td>
+              <td class="reserve">P</td>
+              <td class="sales_order">СЗ</td>
               <td data-lable="Удалить">
                 <i
                   class="fa fa-times"
@@ -161,8 +170,11 @@
             </tr>
             <!--Product wto-->
           </tbody>
+          <!-- End Table body-->
         </table>
+        <!-- Checking for content -->
         <div class="empty"><h2>Необходимо добавить товар</h2></div>
+        <!-- Checking for content -->
       </div>
       <!-- End Price -->
       <!-- Further action -->
