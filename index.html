@@ -3,358 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://use.fontawesome.com/172939fd5e.js"></script>
+    <!-- Connecting to bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Connecting to style -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>A Wed Page</title>
+    <title>Nomenclature</title>
   </head>
   <body>
-    <header>
-      <div class="header_content">
-        <div class="header_nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+    <section class="nomenclature">
+      <!-- Top button -->
+      <div class="nomenclature_item">
+        <div class="item_btn">
+          <a href="#" class="btn btn-light">Печать</a>
+          <a href="#" class="btn btn-light">Резерв</a>
+          <a href="#" class="btn btn-light">СЗ</a>
+          <a href="#" class="btn btn-light">Выбрать товар</a>
+          <a href="#" class="btn btn-light"> Добавить новый товар </a>
+        </div>
+        <div class="sell_check">
+          <input name="sell" type="checkbox" id="sell" />
+          <label for="sell">Показать скидку</label>
         </div>
       </div>
-    </header>
-    <!-- Main content and munu -->
-    <section>
-      <div class="main">
-        <!-- Left menu -->
-        <div class="menu">
-          <div class="menu_content">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fa fa-folder-o" aria-hidden="true"></i>
-                  Use f for closed
+      <!-- End Top button -->
+      <!-- Price -->
+      <div class="nomenclature_priсe">
+        <table class="table table-striped">
+          <thead>
+            <tr class="table-primary">
+              <th></th>
+              <th>Наименование</th>
+              <th>Цена (руб.)</th>
+              <th>Кол-во</th>
+              <th>Ед измерения</th>
+              <th class="sell">Скидка</th>
+              <th>Итого</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--Product one-->
+            <tr id="product-1">
+              <td data-lable="Выделить"><input type="checkbox" /></td>
+              <td data-lable="Наименование" class="name">
+                <a href="#" class="nolink">
+                  Тут должно быть название товара
+                  <span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </span>
                 </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                  Use f for open
+              </td>
+              <td data-lable="Цена (руб.)">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="price-product-1"
+                  value="73034.03"
+                />
+              </td>
+              <td data-lable="Кол-во">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="quantity-product-1"
+                  value="1"
+                />
+              </td>
+              <td data-lable="Ед измерения">
+                <select class="unit">
+                  <option value="thing">шт.</option>
+                  <option value="quantity">кол.</option>
+                </select>
+              </td>
+              <td data-lable="Скидка" class="sell"><input dir="rtl" type="text" /></td>
+              <td data-lable="Итого">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="total-product-1"
+                  name="result"
+                  value="73034.03"
+                />
+              </td>
+              <td data-lable="Удалить">
+                <i
+                  class="fa fa-times"
+                  id="times-product-1"
+                  aria-hidden="true"
+                ></i>
+              </td>
+            </tr>
+            <!--Product one-->
+            <!--Product wto-->
+            <tr id="product-2">
+              <td data-lable="Выделить"><input type="checkbox" /></td>
+              <td data-lable="Наименование" class="name">
+                <a href="#" class="nolink">
+                  Тут должно быть название товара
+                  <span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </span>
                 </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-plus" aria-hidden="true"></i>
-                  You may also use
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-minus" aria-hidden="true"></i>
-                  and this
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  or this
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                  check the scroll
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-square-o" aria-hidden="true"></i>
-                  and this
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  or even this
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                  and this
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                  Use - for a file ico
-                </a>
-                <ul class="two_level_menu">
-                  <a href="#">
-                    <li>or _ to leave a</li>
-                  </a>
-                </ul>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                  use spaces or
-                </a>
-                <ul class="three_level_menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                      just like
-                    </a>
-                    <ul class="three_level">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                          this
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--End left menu-->
-        <!-- Main content -->
-        <div class="main_content">
-          <!-- Bread crumb -->
-          <div class="bread_crumb">
-            <ul>
-              <li>
-                <a href="#">Home</a
-                ><i class="fa fa-angle-right" aria-hidden="true"></i>
-              </li>
-              <li>
-                <a href="#">Products</a
-                ><i class="fa fa-angle-right" aria-hidden="true"></i>
-              </li>
-              <li>
-                <a href="#">Xyz</a
-                ><i class="fa fa-angle-right" aria-hidden="true"></i>
-              </li>
-              <li><a href="#" class="active">Features</a></li>
-            </ul>
-          </div>
-          <!-- End bread crumb -->
-          <!-- Gallery -->
-          <div class="gallery">
-            <div class="gallery-list">
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-              <div class="gallery-item">
-                <img src="./image/250x250.jpg" alt="250x250" />
-                <h3>A Subtitle</h3>
-              </div>
-            </div>
-          </div>
-          <!-- End gallery -->
-        </div>
-        <!--End main content -->
+              </td>
+              <td data-lable="Цена (руб.)">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="price-product-2"
+                  value="73034.03"
+                />
+              </td>
+              <td data-lable="Кол-во">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="quantity-product-2"
+                  value="1"
+                />
+              </td>
+              <td data-lable="Ед измерения">
+                <select class="unit">
+                  <option value="thing">шт.</option>
+                  <option value="quantity">кол.</option>
+                </select>
+              </td>
+              <td data-lable="Скидка" class="sell"><input dir="rtl" type="text" /></td>
+              <td data-lable="Итого">
+                <input
+                  dir="rtl"
+                  type="text"
+                  id="total-product-2"
+                  name="result"
+                  value="73034.03"
+                />
+              </td>
+              <td data-lable="Удалить">
+                <i
+                  class="fa fa-times"
+                  id="times-product-2"
+                  aria-hidden="true"
+                ></i>
+              </td>
+            </tr>
+            <!--Product wto-->
+          </tbody>
+        </table>
+        <div class="empty"><h2>Необходимо добавить товар</h2></div>
       </div>
+      <!-- End Price -->
+      <!-- Further action -->
+      <div class="further_action">
+        <div class="add_product">
+          <a href="#">Добавить товары</a>
+        </div>
+        <div class="total_sum">
+          <div class="alert alert-info" role="alert">
+            Oбщая сумма: <span>146068.06</span>
+          </div>
+        </div>
+      </div>
+      <!-- Further action end -->
     </section>
-    <!-- End main content and munu -->
+
+    <script src="./js/jqury.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
